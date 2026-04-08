@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Enter ID">
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user==="admin" && pass==="1234"){
+        window.location.href="attendance.html";
+    }
+    else{
+        alert("Invalid Login");
+    }
+}
+</script>
+
+</body>
+</html>
